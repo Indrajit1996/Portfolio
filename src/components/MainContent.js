@@ -42,7 +42,7 @@ export default function MainContent() {
                   <div className="flex flex-wrap gap-2 mb-3">
                     <span className="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Rust</span>
                     <span className="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Axum</span>
-                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">React</span>
+                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">HTML</span>
                     <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded">SurrealDb</span>
                   </div>
                   <p className="text-sm text-green-600 font-medium">⚡ Let the battle of resumes begin</p>
