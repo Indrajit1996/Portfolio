@@ -2,7 +2,7 @@ import React from 'react'
 
 const LeftSidebar = () => {
   return (
-    <div className="col-span-3 bg-white rounded-lg p-6 shadow-sm fixed left-6 top-6 w-[calc((100vw-6rem-3rem)/12*3)] h-[calc(100vh-3rem)] overflow-hidden" style={{backgroundColor: '#2d2d2d'}}>
+    <div className="bg-white rounded-lg p-6 shadow-sm w-full lg:fixed lg:left-6 lg:top-6 lg:w-[calc((100vw-6rem-3rem)/12*3)] lg:h-[calc(100vh-3rem)] overflow-hidden" style={{backgroundColor: '#2d2d2d'}}>
         <div className="space-y-6">
         {/* Contact Info */}
         <div>

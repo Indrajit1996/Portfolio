@@ -1,8 +1,7 @@
-import React from 'react';
 
 export default function MainContent() {
   return (
-    <div className="col-span-6 bg-white rounded-lg shadow-sm mx-auto" style={{width: 'calc((100vw - 6rem - 3rem) / 12 * 6.5)',backgroundColor: '#2d2d2d' }}>
+    <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: '#2d2d2d' }}>
       <div className="h-full flex flex-col">
         {/* Hero Section */}
         <div className="p-6 border-b rgb(244, 241, 210)">
@@ -102,19 +101,19 @@ export default function MainContent() {
             <section id="professional-journey" className="mb-8">
               <h2 className="text-2xl font-medium mb-6" style={{color: 'rgb(244, 241, 210)'}}>Professional Journey</h2>
               <div className="timeline-holder relative">
-                <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-300"></div>
+                <div className="absolute left-2 sm:left-4 top-0 bottom-0 w-px bg-gray-300"></div>
                 
                 {/* ASU Decision Theater */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
-                  <div className="ml-10">
-                    <div className="flex items-center justify-between mb-2 w-80">
+                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-lg font-medium" style={{color: 'rgb(244, 241, 210)'}}>ASU Decision Theater</h3>
                       <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Oct 2023 - Present</span>
                     </div>
                     <p className="text-sm mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
-                      <p className="text-sm italic max-w-md break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                      <p className="text-sm italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Marking a significant career milestone. 
                         Meeting exceptional people, exchanging insights, and embracing big-picture perspectives.
                       </p>
@@ -124,17 +123,19 @@ export default function MainContent() {
 
                 {/* Plivo */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
-                  <div className="ml-10">
-                    <div className="flex items-center justify-between mb-2 w-80">
+                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-lg font-medium" style={{color: 'rgb(244, 241, 210)'}}>Plivo</h3>
                       <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Jun 2021 - Apr 2023</span>
                     </div>
                     <p className="text-sm mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
-                      <p className="text-sm italic max-w-md break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                      <p className="text-sm italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
-                        <p>Link: <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://console.contacto.com/</a></p>
+                      </p>
+                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                        Link: <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://console.contacto.com/</a>
                       </p>
                     </div>
                   </div>
@@ -142,18 +143,20 @@ export default function MainContent() {
 
                 {/* Recro */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
-                  <div className="ml-10">
-                    <div className="flex items-center justify-between mb-2 w-80">
+                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-lg font-medium" style={{color: 'rgb(244, 241, 210)'}}>Recro</h3>
                       <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Aug 2020 - Jun 2021</span>
                     </div>
                     <p className="text-sm mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
-                      <p className="text-sm italic max-w-md break-words" style={{color: 'rgb(244, 241, 210)' }}>
+                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                      <p className="text-sm italic break-words" style={{color: 'rgb(244, 241, 210)' }}>
                         Serving as a Frontend Developer at Recro gave me the freedom to develop high-performing pages for TV and OTT apps.
                         One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
-                        <p>Link : <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://web.jawwy.tv/ar/login</a></p>
+                      </p>
+                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                        Link: <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://web.jawwy.tv/ar/login</a>
                       </p>
                     </div>
                   </div>
@@ -161,17 +164,19 @@ export default function MainContent() {
 
                 {/* Weinvest */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
-                  <div className="ml-10">
-                    <div className="flex items-center justify-between mb-2 w-80">
+                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-lg font-medium" style={{color: 'rgb(244, 241, 210)'}}>Weinvest</h3>
                       <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Aug 2018 - Dec 2019</span>
                     </div>
                     <p className="text-sm mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
-                      <p className="text-sm italic max-w-md break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                      <p className="text-sm italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
-                        <p>Link : <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://www.weinvest.net/</a> </p>
+                      </p>
+                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                        Link: <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://www.weinvest.net/</a>
                       </p>
                     </div>
                   </div>
@@ -179,15 +184,15 @@ export default function MainContent() {
 
                 {/* EFI */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
-                  <div className="ml-10">
-                    <div className="flex items-center justify-between mb-2 w-80">
+                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-lg font-medium" style={{color: 'rgb(244, 241, 210)'}}>EFI</h3>
                       <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Jan 2018 - Jun 2018</span>
                     </div>
                     <p className="text-sm mb-3" style={{color: 'rgb(244, 241, 210)'}}>Intern Software Developer</p>
-                    <div className="bg-gray-50 p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
-                      <p className="text-sm italic max-w-md break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                      <p className="text-sm italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         I started my journey as a Software Engineer, working as a Java developer with the Spring framework. It was a big learning curve, and I'm grateful for the opportunity.
                       </p>
                     </div>
