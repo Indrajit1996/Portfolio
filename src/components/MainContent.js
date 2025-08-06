@@ -32,7 +32,7 @@ export default function MainContent() {
                     <div className="flex space-x-3">
                       <span className="text-sm cursor-not-allowed" style={{color: 'rgb(244, 241, 210)', opacity: 0.6}}>Live Demo ↗</span>
                       <a href="https://github.com/matthewharwood/Battalion" 
-                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
+                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
                           GitHub ↗
                       </a>
                     </div>
@@ -54,7 +54,7 @@ export default function MainContent() {
                     <div className="flex space-x-3">
                       <span className="text-sm cursor-not-allowed" style={{color: 'rgb(244, 241, 210)', opacity: 0.6}}>Live Demo ↗</span>
                       <a href="https://github.com/Indrajit1996/Auto-Caller" 
-                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
+                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
                         GitHub ↗
                       </a>
                     </div>
@@ -80,7 +80,7 @@ export default function MainContent() {
                     <div className="flex space-x-3">
                       {/* <a href="#" className="text-sm text-blue-600 hover:underline">Documentation ↗</a> */}
                       <a href="https://github.com/Indrajit1996/Redux-sagas-using-typescript" 
-                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
+                        className="text-sm hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
                           GitHub ↗
                       </a>
                     </div>
