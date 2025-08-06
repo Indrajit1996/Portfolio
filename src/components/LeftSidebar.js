@@ -16,7 +16,7 @@ const LeftSidebar = () => {
             </div>
             
             <div className="space-y-3">
-            <p className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Email: <a href="mailto:vindrajit1996@gmail.com" className="underline" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>vindrajit1996@gmail.com</a></p>
+            <p className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Email: <a href="mailto:vindrajit1996@gmail.com" className="underline" style={{color: 'hsl(208, 59%, 60%)'}}>vindrajit1996@gmail.com</a></p>
             <div className="flex space-x-4">
                 <a href="https://github.com/Indrajit1996" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'} title="GitHub">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
