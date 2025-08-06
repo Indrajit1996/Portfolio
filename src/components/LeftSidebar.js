@@ -16,7 +16,7 @@ const LeftSidebar = () => {
             </div>
             
             <div className="space-y-3">
-            <p className="text-sm text-gray-600">Email: vindrajit1996@gmail.com</p>
+            <p className="text-sm text-gray-600">Email: <a href="mailto:vindrajit1996@gmail.com" className="text-blue-600 hover:text-blue-800 underline">vindrajit1996@gmail.com</a></p>
             <div className="flex space-x-4">
                 <a href="https://github.com/Indrajit1996" className="text-gray-600 hover:text-gray-900" title="GitHub">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
