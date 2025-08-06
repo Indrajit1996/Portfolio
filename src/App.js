@@ -12,7 +12,9 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen bg-gray-50 p-6 overflow-y-auto" style={{ fontFamily: 'Diatype Variable, -apple-system, BlinkMacSystemFont, sans-serif' }}>
+    <div className="h-screen bg-gray-50 p-6 overflow-y-auto" 
+      style={{ fontFamily: 'Diatype Variable, -apple-system, BlinkMacSystemFont, sans-serif',
+        backgroundColor: '#2d2d2d' }}>
       <div className="max-w-7xl mx-auto grid gap-6 min-h-full">
         
         {/* Left Sidebar */}
