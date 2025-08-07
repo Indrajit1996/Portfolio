@@ -36,36 +36,58 @@ export default function RightSidebar({ scrollToSection }) {
       <div className="space-y-6">
         {/* Top Navigation */}
         <div>
-          <nav className="space-y-2">
-            <button onClick={() => scrollToSection('featured-projects')} className="flex items-center text-sm cursor-pointer" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
-              <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
-              Featured Projects
-            </button>
-            <button onClick={() => scrollToSection('professional-journey')} className="flex items-center text-sm cursor-pointer" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
-              <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
-              Professional Journey
-            </button>
-            <button onClick={() => scrollToSection('blogs')} className="flex items-center text-sm cursor-pointer" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>
-              <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
-              Blogs
-            </button>
-          </nav>
+          <div className="w-full text-xs font-semibold text-[rgb(244,241,210)] outline-none">
+            <hr className="border-[rgb(244,241,210)] my-2" />
+            <span className="block mb-2">
+              <a 
+                href="#" 
+                rel="home-page" 
+                onClick={(e) => { e.preventDefault(); scrollToSection('featured-projects'); }}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              >
+                ❶ &nbsp;Featured Projects
+              </a>
+            </span>
+            <hr className="border-[rgb(244,241,210)] my-2" />
+            <span className="block mb-2">
+              <a 
+                href="#" 
+                rel="home-page" 
+                onClick={(e) => { e.preventDefault(); scrollToSection('professional-journey'); }}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              >
+                ❷ &nbsp;Professional Journey
+              </a>
+            </span>
+            <hr className="border-[rgb(244,241,210)] my-2" />
+            <span className="block mb-2">
+              <a 
+                href="#" 
+                rel="home-page" 
+                onClick={(e) => { e.preventDefault(); scrollToSection('blogs'); }}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              >
+                ❸ &nbsp;Blogs
+              </a>
+            </span>
+            <hr className="border-[rgb(244,241,210)] my-2" />
+          </div>
         </div>
 
         {/* Professional Highlights */}
-        <div className="border-t border-gray-200 pt-4">
-          <h3 className="text-sm font-medium mb-3" style={{color: 'rgb(244, 241, 210)'}}>Professional Highlights</h3>
+        <div>
+          <h3 className="text-xs font-semibold mb-3 text-[rgb(244,241,210)]">Professional Highlights</h3>
           <div className="space-y-2">
             <div className="flex items-center">
               <span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>
-              <span className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Available for opportunities</span>
+              <span className="text-xs font-semibold text-[rgb(244,241,210)]">Available for opportunities</span>
             </div>
           </div>
         </div>
 
         {/* Key Skills */}
         <div className="border-t border-gray-200 pt-4">
-          <h3 className="text-sm font-medium mb-3" style={{color: 'rgb(244, 241, 210)'}}>Key Skills</h3>
+          <h3 className="text-xs font-semibold mb-3 text-[rgb(244,241,210)]">Key Skills</h3>
           <div className="flex flex-wrap gap-2">
             <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">React</span>
             <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Next.js</span>
@@ -77,7 +99,7 @@ export default function RightSidebar({ scrollToSection }) {
 
         {/* Recent Photos */}
         <div className="border-t border-gray-200 pt-4">
-          <h3 className="text-sm font-medium mb-3" style={{color: 'rgb(244, 241, 210)'}}>Recent Photos</h3>
+          <h3 className="text-xs font-semibold mb-3 text-[rgb(244,241,210)]">Recent Photos</h3>
           <div className="grid grid-cols-2 gap-2">
             <img 
               src="/1.jpeg" 
@@ -98,7 +120,7 @@ export default function RightSidebar({ scrollToSection }) {
               onClick={() => openModal('/3.jpeg', 'Recent moment 3')}
             />
             <div className="w-full h-20 bg-gray-100 rounded-md flex items-center justify-center">
-              <span className="text-xs" style={{color: 'rgb(244, 241, 210)'}}>+More</span>
+              <span className="text-xs font-semibold text-[rgb(244,241,210)]">+More</span>
             </div>
           </div>
         </div>

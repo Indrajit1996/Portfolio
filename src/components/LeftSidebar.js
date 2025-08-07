@@ -10,13 +10,13 @@ const LeftSidebar = () => {
         </div>
         <div>
             <div className="border-b border-gray-200 pb-4 mb-4">
-                <h3 className="font-medium" style={{color: 'rgb(244, 241, 210)'}}>Indrajit V</h3>
-                <p className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>San Francisco</p>
+                <h3 className="font-medium font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Indrajit V</h3>
+                <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>San Francisco</p>
                 {/* <p className="text-sm text-gray-600">(415)-798-1231</p> */}
             </div>
             
             <div className="space-y-3">
-            <p className="text-sm" style={{color: 'rgb(244, 241, 210)'}}>Email: <a href="mailto:vindrajit1996@gmail.com" className="underline" style={{color: 'hsl(208, 59%, 60%)'}}>vindrajit1996@gmail.com</a></p>
+            <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Email: <a href="mailto:vindrajit1996@gmail.com" className="underline" style={{color: 'hsl(208, 59%, 60%)'}}>vindrajit1996@gmail.com</a></p>
             <div className="flex space-x-4">
                 <a href="https://github.com/Indrajit1996" style={{color: 'rgb(244, 241, 210)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'} title="GitHub">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -45,13 +45,13 @@ const LeftSidebar = () => {
         {/* Bottom Section */}
         <div className="space-y-4">
             <div>
-                <p className="text-sm leading-relaxed" style={{color: 'rgb(244, 241, 210)'}}>
+                <p className="text-xs font-semibold leading-relaxed" style={{color: 'rgb(244, 241, 210)'}}>
                     I create visually precise interfaces and transform ideas into working products.
                     I'm a Frontend Engineer obsessed with clean, efficient code and exploring AI's potential in shaping the future of the web.
                 </p>
-                <p className="text-sm italic mt-3 border-l-2 border-gray-200 pl-3" style={{color: 'rgb(244, 241, 210)'}}>
+                <p className="text-xs font-semibold italic mt-3 border-l-2 border-gray-200 pl-3" style={{color: 'rgb(244, 241, 210)'}}>
                     "Simplicity is the ultimate sophistication in code."
-                    <span className="block text-xs mt-1" style={{color: 'rgb(244, 241, 210)'}}>— TypeScript Architect</span>
+                    <span className="block text-xs font-semibold mt-1" style={{color: 'rgb(244, 241, 210)'}}>— TypeScript Architect</span>
                 </p>
             </div>
             {/* <p className="text-sm text-gray-800">
