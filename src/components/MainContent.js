@@ -137,7 +137,7 @@ export default function MainContent() {
                         became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://console.contacto.com/</a>
+                        Link: <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://console.contacto.com/</a>
                       </p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function MainContent() {
                         One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://web.jawwy.tv/ar/login</a>
+                        Link: <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://web.jawwy.tv/ar/login</a>
                       </p>
                     </div>
                   </div>
@@ -178,7 +178,7 @@ export default function MainContent() {
                         Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}} onMouseEnter={(e) => e.target.style.color = 'rgb(200, 190, 150)'} onMouseLeave={(e) => e.target.style.color = 'rgb(244, 241, 210)'}>https://www.weinvest.net/</a>
+                        Link: <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://www.weinvest.net/</a>
                       </p>
                     </div>
                   </div>
