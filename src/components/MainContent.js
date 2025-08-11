@@ -254,6 +254,22 @@ export default function MainContent() {
                 </div>
               </div>
             </section>
+
+            <section className="mb-8" id="resume">
+              <div className="bg-white rounded-lg p-6 shadow-sm" style={{backgroundColor: '#2d2d2d'}}>
+                <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Resume</h2>
+                <div className="text-center">
+                  <a 
+                    href="https://drive.google.com/uc?export=download&id=19y8tui9HI9hkfr8ZGJNAtnk9NfEb6wcI"
+                    download="Resume.pdf"
+                    className="inline-block bg-transparent border border-gray-300 text-xs font-semibold py-3 px-6 rounded-lg hover:scale-[1.005] transition-all duration-300 cursor-pointer"
+                    style={{color: 'rgb(244, 241, 210)', borderColor: 'rgb(244, 241, 210)'}}
+                  >
+                    Click here - Download Resume ↗
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>

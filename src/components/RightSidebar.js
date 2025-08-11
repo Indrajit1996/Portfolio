@@ -71,6 +71,17 @@ export default function RightSidebar({ scrollToSection }) {
               </a>
             </span>
             <hr className="border-[rgb(244,241,210)] my-2" />
+            <span className="block mb-2">
+              <a 
+                href="#" 
+                rel="home-page" 
+                onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              >
+                ❹ &nbsp;Resume
+              </a>
+            </span>
+            <hr className="border-[rgb(244,241,210)] my-2" />
           </div>
         </div>
 
