@@ -30,7 +30,7 @@ export default function MainContent() {
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
                     <div className="flex space-x-3">
-                      <span className="text-xs font-semibold cursor-not-allowed" style={{color: 'rgb(244, 241, 210)', opacity: 0.6}}>Live Demo ↗</span>
+                      <span className="text-xs font-semibold cursor-pointer hover:underline" style={{color: 'hsl(208, 59%, 60%)'}} onClick={() => { window.open('https://battalion.fly.dev/', '_blank') }}>Live Demo ↗</span>
                       <a href="https://github.com/matthewharwood/Battalion" 
                         className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
                           GitHub ↗
