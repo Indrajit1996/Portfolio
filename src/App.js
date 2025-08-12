@@ -12,27 +12,28 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen bg-gray-50 p-6 overflow-y-auto" 
+    <main className="h-screen bg-gray-50 p-6 overflow-y-auto" 
       style={{ fontFamily: 'Diatype Variable, -apple-system, BlinkMacSystemFont, sans-serif',
-        backgroundColor: '#2d2d2d' }}>
+        backgroundColor: '#2d2d2d' }}
+      role="main">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-full">
         
-        {/* Left Sidebar - Order 1 on mobile */}
-        <div className="lg:col-span-3 lg:order-1 order-1">
+        {/* Contact Info & Profile - Semantic aside */}
+        <aside className="lg:col-span-3 lg:order-1 order-1" role="complementary" aria-label="Contact information and profile">
           <LeftSidebar />
-        </div>
+        </aside>
 
-        {/* Right Sidebar - Order 2 on mobile */}
-        <div className="lg:col-span-3 lg:order-3 order-2">
+        {/* Navigation Menu - Semantic nav */}
+        <nav className="lg:col-span-3 lg:order-3 order-2" role="navigation" aria-label="Section navigation">
           <RightSidebar scrollToSection={scrollToSection} />
-        </div>
+        </nav>
 
-        {/* Main Content - Order 3 on mobile */}
-        <div className="lg:col-span-6 lg:order-2 order-3">
+        {/* Main Portfolio Content - Semantic section */}
+        <section className="lg:col-span-6 lg:order-2 order-3" aria-label="Portfolio content">
           <MainContent />
-        </div>
+        </section>
 
       </div>
-    </div>
+    </main>
   );
 }
