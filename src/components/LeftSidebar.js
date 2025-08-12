@@ -6,7 +6,7 @@ const LeftSidebar = () => {
         <div className="space-y-6">
         {/* Contact Info */}
         <div>
-            <img src="/portfolio.png" alt="Profile.png" className="w-1/2 h-auto" />
+            <img src="/portfolio.png" alt="Indrajit V - Frontend Engineer profile photo" className="w-1/2 h-auto" loading="lazy" />
         </div>
         <div>
             <div className="border-b border-gray-200 pb-4 mb-4">

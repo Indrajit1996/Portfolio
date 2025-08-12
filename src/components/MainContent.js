@@ -4,7 +4,7 @@ export default function MainContent() {
     <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: '#2d2d2d' }}>
       <div className="h-full flex flex-col">
         {/* Hero Section */}
-        <div className="p-6">
+        <header className="p-6">
           <h1 className="text-4xl font-semibold mb-6 text-center" style={{color: 'rgb(244, 241, 210)'}}>Frontend Engineer</h1>
           <p className="mb-3 text-center font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
             Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
@@ -17,7 +17,7 @@ export default function MainContent() {
           >
             Software Engineer at Decision Theater, ASU
           </p>
-        </div>
+        </header>
         
         <div className="flex-1 p-6">
           <div className="prose prose-gray max-w-none">
