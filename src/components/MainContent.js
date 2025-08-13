@@ -4,6 +4,7 @@ export default function MainContent() {
     <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: '#2d2d2d' }}>
       <div className="h-full flex flex-col">
         {/* Hero Section */}
+        <hr className="border-[rgb(244,241,210)] mt-6" />
         <header className="p-6">
           <h1 className="text-4xl font-semibold mb-6 text-center" style={{color: 'rgb(244, 241, 210)'}}>Frontend Engineer</h1>
           <p className="mb-3 text-center font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
@@ -26,7 +27,7 @@ export default function MainContent() {
               <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Featured Projects</h2>
               <div className="space-y-6">
                 {/* Project 1: Battalion CRM */}
-                <div className="border rgb(244, 241, 210) rounded-lg p-6 hover:shadow-md hover:scale-[1.005] transition-all duration-300 cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
                     <div className="flex space-x-3">
@@ -41,16 +42,16 @@ export default function MainContent() {
                     Real-time CRM platform built with Rust and Axum for scalable client onboarding and management.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Rust</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Axum</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">HTML</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">SurrealDb</span>
+                    <span className="text-xs text-gray-400" >Rust</span>
+                    <span className="text-xs text-gray-400" >Axum</span>
+                    <span className="text-xs text-gray-400" >HTML</span>
+                    <span className="text-xs text-gray-400" >SurrealDb</span>
                   </div>
                   <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>⚡ Let the battle of resumes begin</p>
                 </div>
                 
                 {/* Project 2: Auto-Caller App */}
-                <div className="border rgb(244, 241, 210) rounded-lg p-6 hover:shadow-md hover:scale-[1.005] transition-all duration-300 cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Auto-Caller App</h3>
                     <div className="flex space-x-3">
@@ -63,20 +64,20 @@ export default function MainContent() {
                   </div>
                   <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>AI-powered outreach platform for elderly care with automated calling features and real-time monitoring.</p>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">React</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">TypeScript</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Vite</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Flask</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Redis</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Docker</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">AI Integration</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Micro-frontend</span>
+                    <span className="text-xs text-gray-400">React</span>
+                    <span className="text-xs text-gray-400">TypeScript</span>
+                    <span className="text-xs text-gray-400">Vite</span>
+                    <span className="text-xs text-gray-400">Flask</span>
+                    <span className="text-xs text-gray-400">Redis</span>
+                    <span className="text-xs text-gray-400">Docker</span>
+                    <span className="text-xs text-gray-400">AI Integration</span>
+                    <span className="text-xs text-gray-400">Micro-frontend</span>
                   </div>
                   <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>📈 100+ downloads</p>
                 </div>
 
                 {/* Project 3: Scalable Frontend Architecture */}
-                <div className="border rgb(244, 241, 210) rounded-lg p-6 hover:shadow-md hover:scale-[1.005] transition-all duration-300 cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Scalable Frontend Architecture</h3>
                     <div className="flex space-x-3">
@@ -89,9 +90,9 @@ export default function MainContent() {
                   </div>
                   <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>React + Typescript + Redux-Saga framework for modular, maintainable architecture.</p>
                   <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">React</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">TypeScript</span>
-                    <span className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">Redux-Saga</span>
+                    <span className="text-xs text-gray-400">React</span>
+                    <span className="text-xs text-gray-400">TypeScript</span>
+                    <span className="text-xs text-gray-400">Redux-Saga</span>
                   </div>
                   <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>⚡ 40% faster release velocity</p>
                 </div>
@@ -107,14 +108,14 @@ export default function MainContent() {
                 
                 {/* ASU Decision Theater */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>ASU Decision Theater</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Oct 2023 - Present</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                    <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Marking a significant career milestone. 
                         Meeting exceptional people, exchanging insights, and embracing big-picture perspectives.
@@ -125,19 +126,19 @@ export default function MainContent() {
 
                 {/* Plivo */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Plivo</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Jun 2021 - Apr 2023</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                    <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://console.contacto.com/</a>
+                        <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://console.contacto.com/</a>
                       </p>
                     </div>
                   </div>
@@ -145,20 +146,20 @@ export default function MainContent() {
 
                 {/* Recro */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Recro</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Aug 2020 - Jun 2021</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                    <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)' }}>
                         Serving as a Frontend Developer at Recro gave me the freedom to develop high-performing pages for TV and OTT apps.
                         One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://web.jawwy.tv/ar/login</a>
+                        <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://web.jawwy.tv/ar/login</a>
                       </p>
                     </div>
                   </div>
@@ -166,19 +167,19 @@ export default function MainContent() {
 
                 {/* Weinvest */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Weinvest</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Aug 2018 - Dec 2019</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
-                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                    <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
                       </p>
                       <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
-                        Link: <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://www.weinvest.net/</a>
+                        <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://www.weinvest.net/</a>
                       </p>
                     </div>
                   </div>
@@ -186,14 +187,14 @@ export default function MainContent() {
 
                 {/* EFI */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0 sm:left-2 w-4 h-4 bg-[rgb(244,241,210)] rounded-full border-2 border-[rgb(244,241,210)] shadow"></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>EFI</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Jan 2018 - Jun 2018</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Intern Software Developer</p>
-                    <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border rgb(244, 241, 210)" style={{background: 'transparent'}}>
+                    <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         I started my journey as a Software Engineer, working as a Java developer with the Spring framework. It was a big learning curve, and I'm grateful for the opportunity.
                       </p>
@@ -205,71 +206,70 @@ export default function MainContent() {
 
             {/* Blogs Section */}
             <section id="blogs" className="mb-12">
-              <div className="bg-white rounded-lg p-6 shadow-sm" style={{backgroundColor: '#2d2d2d'}}>
-                <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Blogs</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <a 
-                    href="https://medium.com/@vindrajit1996/understand-web-fundamentals-2d0edb87e0cc" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer border rgb(244, 241, 210) hover:scale-[1.005] transition-all duration-300"
-                    style={{background: 'transparent'}}
-                  >
-                    <h3 className="text-base font-semibold mb-2" style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
-                    <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>A comprehensive guide to understanding the core concepts of web development.</p>
-                  </a>
+              <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Blogs</h2>
+              <div className="space-y-6">
+                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
+                    <a href="https://medium.com/@vindrajit1996/understand-web-fundamentals-2d0edb87e0cc" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        Read More ↗
+                    </a>
+                  </div>
+                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                    A comprehensive guide to understanding the core concepts of web development.
+                  </p>
+                </div>
 
-                  <a 
-                    href="https://medium.com/@vindrajit1996/leptos-in-action-full-stack-web-dev-the-rusty-way-07536449a417" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer border rgb(244, 241, 210) hover:scale-[1.005] transition-all duration-300"
-                    style={{background: 'transparent'}}
-                  >
-                    <h3 className="text-base font-semibold mb-2" style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
-                    <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Exploring full-stack web development using Leptos and the Rust ecosystem.</p>
-                  </a>
+                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
+                    <a href="https://medium.com/@vindrajit1996/leptos-in-action-full-stack-web-dev-the-rusty-way-07536449a417" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        Read More ↗
+                    </a>
+                  </div>
+                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                    Exploring full-stack web development using Leptos and the Rust ecosystem.
+                  </p>
+                </div>
 
-                  <a 
-                    href="https://medium.com/@vindrajit1996/how-does-javascript-v8-engine-works-8756648e592f" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer border rgb(244, 241, 210) hover:scale-[1.005] transition-all duration-300"
-                    style={{background: 'transparent'}}
-                  >
-                    <h3 className="text-base font-semibold mb-2" style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
-                    <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Deep dive into the inner workings of Chrome's V8 JavaScript engine.</p>
-                  </a>
+                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
+                    <a href="https://medium.com/@vindrajit1996/how-does-javascript-v8-engine-works-8756648e592f" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        Read More ↗
+                    </a>
+                  </div>
+                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                    Deep dive into the inner workings of Chrome's V8 JavaScript engine.
+                  </p>
+                </div>
 
-                  <a 
-                    href="https://medium.com/@vindrajit1996/react-hooks-b8145d83e416" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors hover:scale-[1.005] transition-all duration-300 cursor-pointer border rgb(244, 241, 210)"
-                    style={{background: 'transparent'}}
-                  >
-                    <h3 className="text-base font-semibold mb-2" style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
-                    <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Understanding React Hooks and how they revolutionize functional components.</p>
-                  </a>
+                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
+                    <a href="https://medium.com/@vindrajit1996/react-hooks-b8145d83e416" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        Read More ↗
+                    </a>
+                  </div>
+                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                    Understanding React Hooks and how they revolutionize functional components.
+                  </p>
                 </div>
               </div>
             </section>
 
-            <section className="mb-8" id="resume">
-              <div className="bg-white rounded-lg p-6 shadow-sm" style={{backgroundColor: '#2d2d2d'}}>
-                <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Resume</h2>
-                <div className="text-center">
-                  <a 
-                    href="https://drive.google.com/uc?export=download&id=19y8tui9HI9hkfr8ZGJNAtnk9NfEb6wcI"
-                    download="Resume.pdf"
-                    className="inline-block bg-transparent border border-gray-300 text-xs font-semibold py-3 px-6 rounded-lg hover:scale-[1.005] transition-all duration-300 cursor-pointer"
-                    style={{color: 'rgb(244, 241, 210)', borderColor: 'rgb(244, 241, 210)'}}
-                  >
-                    Click here - Download Resume ↗
-                  </a>
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </div>

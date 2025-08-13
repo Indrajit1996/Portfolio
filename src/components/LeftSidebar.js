@@ -54,6 +54,19 @@ const LeftSidebar = () => {
                     <span className="block text-xs font-semibold mt-1" style={{color: 'rgb(244, 241, 210)'}}>— TypeScript Architect</span>
                 </p>
             </div>
+            
+            {/* Resume Download */}
+            <div className="text-center mt-6">
+                <a 
+                    href="https://drive.google.com/uc?export=download&id=19y8tui9HI9hkfr8ZGJNAtnk9NfEb6wcI"
+                    download="Resume.pdf"
+                    className="inline-block bg-transparent border border-gray-300 text-xs font-semibold py-2 px-4 rounded-lg hover:scale-[1.005] transition-all duration-300 cursor-pointer"
+                    style={{color: 'rgb(244, 241, 210)', borderColor: 'rgb(244, 241, 210)'}}
+                >
+                    Click here - Download Resume ↗
+                </a>
+            </div>
+            
             {/* <p className="text-sm text-gray-800">
                 Morbi eu bibendum justo. Aliquam erat volutpat.
             </p> */}

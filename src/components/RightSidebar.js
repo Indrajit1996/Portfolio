@@ -15,7 +15,7 @@ export default function RightSidebar({ scrollToSection }) {
     <>
       {/* Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={closeModal}>
+        <div className="fixed inset-0 backdrop-blur-md bg-black bg-opacity-30 flex items-center justify-center z-50" onClick={closeModal}>
           <div className="relative max-w-lg max-h-[80vh] p-4" onClick={(e) => e.stopPropagation()}>
             <img
               src={selectedImage.src}
@@ -37,7 +37,7 @@ export default function RightSidebar({ scrollToSection }) {
         {/* Top Navigation */}
         <div>
           <div className="w-full text-xs font-semibold text-[rgb(244,241,210)] outline-none">
-            <hr className="border-[rgb(244,241,210)] my-2" />
+            <hr className="border-[rgb(244,241,210)] mb-2" />
             <span className="block mb-2">
               <a 
                 href="#" 
@@ -68,17 +68,6 @@ export default function RightSidebar({ scrollToSection }) {
                 className="text-[rgb(244,241,210)] no-underline cursor-pointer"
               >
                 ❸ &nbsp;Blogs
-              </a>
-            </span>
-            <hr className="border-[rgb(244,241,210)] my-2" />
-            <span className="block mb-2">
-              <a 
-                href="#" 
-                rel="home-page" 
-                onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
-                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
-              >
-                ❹ &nbsp;Resume
               </a>
             </span>
             <hr className="border-[rgb(244,241,210)] my-2" />
@@ -115,22 +104,25 @@ export default function RightSidebar({ scrollToSection }) {
             <img 
               src="/1.jpeg" 
               alt="Recent moment 1" 
-              className="w-full h-20 object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              className="w-full object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              style={{ aspectRatio: '4/3' }}
               onClick={() => openModal('/1.jpeg', 'Recent moment 1')}
             />
             <img 
               src="/4.jpeg" 
               alt="Recent moment 2" 
-              className="w-full h-20 object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              className="w-full object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              style={{ aspectRatio: '4/3' }}
               onClick={() => openModal('/4.jpeg', 'Recent moment 2')}
             />
             <img 
               src="/3.jpeg" 
               alt="Recent moment 3" 
-              className="w-full h-20 object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              className="w-full object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              style={{ aspectRatio: '4/3' }}
               onClick={() => openModal('/3.jpeg', 'Recent moment 3')}
             />
-            <div className="w-full h-20 bg-gray-100 rounded-md flex items-center justify-center">
+            <div className="w-full bg-gray-100 rounded-md flex items-center justify-center" style={{ aspectRatio: '4/3' }}>
               <span className="text-xs font-semibold text-[rgb(244,241,210)]">+More</span>
             </div>
           </div>
