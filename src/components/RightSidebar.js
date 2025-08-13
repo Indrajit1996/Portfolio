@@ -122,9 +122,13 @@ export default function RightSidebar({ scrollToSection }) {
               style={{ aspectRatio: '4/3' }}
               onClick={() => openModal('/3.jpeg', 'Recent moment 3')}
             />
-            <div className="w-full bg-gray-100 rounded-md flex items-center justify-center" style={{ aspectRatio: '4/3' }}>
-              <span className="text-xs font-semibold text-[rgb(244,241,210)]">+More</span>
-            </div>
+            <img 
+              src="/2.jpeg" 
+              alt="Recent moment 3" 
+              className="w-full object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity" 
+              style={{ aspectRatio: '4/3' }}
+              onClick={() => openModal('/2.jpeg', 'Recent moment 3')}
+            />
           </div>
         </div>
 

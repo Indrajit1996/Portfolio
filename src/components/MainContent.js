@@ -10,13 +10,6 @@ export default function MainContent() {
           <p className="mb-3 text-center font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
             Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
             Passionate about end-to-end ownership from concept to deployment.
-          </p> 
-          <p className="text-xs font-semibold cursor-pointer" style={{color: 'hsl(208, 59%, 60%)'}}
-            onClick={() => {
-              window.open('https://dt.asu.edu/solutions', '_blank')
-            }} 
-          >
-            Software Engineer at Decision Theater, ASU
           </p>
         </header>
         
@@ -104,7 +97,7 @@ export default function MainContent() {
             <section id="professional-journey" className="mb-8">
               <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Professional Journey</h2>
               <div className="timeline-holder relative">
-                <div className="absolute left-2 sm:left-4 top-0 bottom-0 w-px bg-gray-300"></div>
+                <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: 0}}></div>
                 
                 {/* ASU Decision Theater */}
                 <div className="relative flex items-start mb-8">
@@ -116,7 +109,7 @@ export default function MainContent() {
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Marking a significant career milestone. 
                         Meeting exceptional people, exchanging insights, and embracing big-picture perspectives.
                       </p>
@@ -134,10 +127,10 @@ export default function MainContent() {
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
                       </p>
-                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://console.contacto.com/</a>
                       </p>
                     </div>
@@ -154,11 +147,11 @@ export default function MainContent() {
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)' }}>
+                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)' }}>
                         Serving as a Frontend Developer at Recro gave me the freedom to develop high-performing pages for TV and OTT apps.
                         One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
                       </p>
-                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://web.jawwy.tv/ar/login</a>
                       </p>
                     </div>
@@ -175,10 +168,10 @@ export default function MainContent() {
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
                       </p>
-                      <p className="mt-2 text-sm" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://www.weinvest.net/</a>
                       </p>
                     </div>
@@ -195,7 +188,7 @@ export default function MainContent() {
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Intern Software Developer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs font-semibold italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
                         I started my journey as a Software Engineer, working as a Java developer with the Spring framework. It was a big learning curve, and I'm grateful for the opportunity.
                       </p>
                     </div>
