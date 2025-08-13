@@ -5,7 +5,7 @@ export default function MainContent() {
       <div className="h-full flex flex-col">
         {/* Hero Section */}
         <hr className="border-[rgb(244,241,210)] mt-6" />
-        <header className="p-6">
+        <header className="p-6 pl-0 pr-0">
           <h1 className="text-4xl font-semibold mb-6 text-center" style={{color: 'rgb(244, 241, 210)'}}>Frontend Engineer</h1>
           <p className="mb-3 text-center font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
             Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
@@ -20,7 +20,7 @@ export default function MainContent() {
           </p>
         </header>
         
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 pl-0 pr-0">
           <div className="prose prose-gray max-w-none">
             {/* Featured Projects Section */}
             <section id="featured-projects" className="mb-8">
