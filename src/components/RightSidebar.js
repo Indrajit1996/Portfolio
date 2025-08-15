@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../index.css';
 import { imageContent } from './utils';
 
@@ -12,6 +12,20 @@ export default function RightSidebar({ scrollToSection }) {
   const closeModal = () => {
     setSelectedImage(null);
   };
+
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === 'Escape' && selectedImage) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscKey);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [selectedImage]);
 
   return (
     <>
