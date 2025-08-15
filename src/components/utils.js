@@ -1,0 +1,18 @@
+export const imageContent = {
+    graduation: {
+        header: 'Graduation',
+        content: `I celebrated earning my Masters in Computer Science at Arizona State University beneath the desert-blue Tempe sky—diploma in hand, maroon gown catching the breeze beside the Sun Devil pitchfork. This moment reflects the way I approach engineering: resilient, detail-obsessed, and built for end-to-end ownership. ASU's hands-on, high-energy culture shaped my craft, and I carry that same momentum into every product I design and ship. During my time at ASU, I balanced rigorous coursework with building real, shippable software. I dove deep into data visualization and knowledge representation, turning complex ideas into clear, interactive experiences. Outside class, I prototyped tools, iterated with user feedback, and held myself to production standards—clean architecture, accessible UI, and measurable performance. I learned to reason about trade-offs, write code that's easy to change, and move from concept to deploy without losing sight of the user.`,
+    },
+    skydive: {
+        header: 'Skydiving',
+        content: `The door slides open and the cabin fills with wind. I run my checklist—altimeter, chest strap, handles—tap my instructor's fist, and inch to the edge. There's a clean moment between fear and focus where everything narrows to a single decision. We lean forward together and step. Freefall is loud but strangely clear. I hold position, breathe, and watch the horizon stabilize—inputs, outcomes, feedback. It feels like a live production deploy: plan well, commit with conviction, correct quickly. At 5,500 feet I signal, we wave off, and the canopy blooms overhead. The chaos gives way to quiet. We steer a tidy pattern and touch down exactly where we briefed. That jump is how I build software: prepare with checklists, communicate roles, embrace calculated risk, and execute with calm under pressure. Adventure for me isn't recklessness—it's disciplined exploration. I bring that same rhythm—plan, brief, execute, debrief—to every product I ship.`,
+    },
+    football: {
+        header: 'ASU Football Team',
+        content: `Football is my reset button and my classroom. At ASU I've played 11-v-11 with teammates from around the world—different languages, styles, and stories—and learned how fast trust forms when the ball moves. In one of our best tournaments we tore through the bracket with scorelines like 10-0 and 8-0, even against squads with semi-pro players. The wins mattered, but the lesson mattered more: diverse teams make smarter decisions; reading passing lanes is pattern recognition; tight windows demand calm execution; the assist is as valuable as the goal; and small adjustments after every match compound into big results. That same rhythm—collaborate across backgrounds, see the field, move decisively, iterate—shapes how I build products.`,
+    },
+    trip: {
+        header: 'Sedona Trip',
+        content: `I love getting out on Sedona's red-rock trails—wide open slickrock, sparse juniper, and a steady climb that rewards patience more than speed. I plan my route, check weather and daylight, and pack light but deliberate; then it's rhythm: hydrate, pace, scan the terrain, choose the next line. The hike is a good mirror for how I build software—read the landscape, make small, reversible decisions, and keep moving toward the ridge. On the way up you learn to respect constraints (heat, footing, time) and still find creative paths; on the way down you translate that into notes, maps, and better prep for the next run. Sedona is my reminder that progress is mostly quiet work—foot after foot on stone—and that focus plus steady iteration gets you to views worth sharing.`,
+    }
+}

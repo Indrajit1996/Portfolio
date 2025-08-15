@@ -1,13 +1,13 @@
 
 export default function MainContent() {
   return (
-    <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: '#2d2d2d' }}>
+    <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: 'transparent' , zIndex: 5}}>
       <div className="h-full flex flex-col">
         {/* Hero Section */}
         <hr className="border-[rgb(244,241,210)] mt-6" />
-        <header className="p-6 pl-0 pr-0">
-          <h1 className="text-4xl font-semibold mb-6 text-center" style={{color: 'rgb(244, 241, 210)'}}>Frontend Engineer</h1>
-          <p className="mb-3 text-center font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+        <header className="p-6 pl-0 pr-0 opacity-[0.8]">
+          <h1 className="text-4xl font-semibold mb-6 text-left" style={{color: '#ff6a3b'}}>Frontend Engineer</h1>
+          <p className="mb-3 text-left font-[600] text-2xl" style={{color: 'rgba(236,234,204,255)'}}>
             Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
             Passionate about end-to-end ownership from concept to deployment.
           </p>
@@ -17,45 +17,45 @@ export default function MainContent() {
           <div className="prose prose-gray max-w-none">
             {/* Featured Projects Section */}
             <section id="featured-projects" className="mb-8">
-              <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Featured Projects</h2>
+              <h2 className="text-2xl font-semibold mb-6 opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Featured Projects</h2>
               <div className="space-y-6">
                 {/* Project 1: Battalion CRM */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
                     <div className="flex space-x-3">
-                      <span className="text-xs font-semibold cursor-pointer hover:underline" style={{color: 'hsl(208, 59%, 60%)'}} onClick={() => { window.open('https://battalion.fly.dev/', '_blank') }}>Live Demo ↗</span>
+                      <span className="text-xs font-semibold cursor-pointer hover:underline" style={{color: 'rgba(70,107,85,255)'}} onClick={() => { window.open('https://battalion.fly.dev/', '_blank') }}>Live Demo ↗</span>
                       <a href="https://github.com/matthewharwood/Battalion" 
-                        className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                           GitHub ↗
                       </a>
                     </div>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     Real-time CRM platform built with Rust and Axum for scalable client onboarding and management.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-3">
+                  <div className="flex flex-wrap gap-2 mb-3 opacity-[0.8]">
                     <span className="text-xs text-gray-400" >Rust</span>
                     <span className="text-xs text-gray-400" >Axum</span>
                     <span className="text-xs text-gray-400" >HTML</span>
                     <span className="text-xs text-gray-400" >SurrealDb</span>
                   </div>
-                  <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>⚡ Let the battle of resumes begin</p>
+                  <p className="text-xs font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>⚡ Let the battle of resumes begin</p>
                 </div>
                 
                 {/* Project 2: Auto-Caller App */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Auto-Caller App</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Auto-Caller App</h3>
                     <div className="flex space-x-3">
                       <span className="text-xs font-semibold cursor-not-allowed" style={{color: 'rgb(244, 241, 210)', opacity: 0.6}}>Live Demo ↗</span>
                       <a href="https://github.com/Indrajit1996/Auto-Caller" 
-                        className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                         GitHub ↗
                       </a>
                     </div>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>AI-powered outreach platform for elderly care with automated calling features and real-time monitoring.</p>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>AI-powered outreach platform for elderly care with automated calling features and real-time monitoring.</p>
                   <div className="flex flex-wrap gap-2 mb-3">
                     <span className="text-xs text-gray-400">React</span>
                     <span className="text-xs text-gray-400">TypeScript</span>
@@ -66,35 +66,35 @@ export default function MainContent() {
                     <span className="text-xs text-gray-400">AI Integration</span>
                     <span className="text-xs text-gray-400">Micro-frontend</span>
                   </div>
-                  <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>📈 100+ downloads</p>
+                  <p className="text-xs font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>📈 100+ downloads</p>
                 </div>
 
                 {/* Project 3: Scalable Frontend Architecture */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Scalable Frontend Architecture</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Scalable Frontend Architecture</h3>
                     <div className="flex space-x-3">
                       {/* <a href="#" className="text-sm text-blue-600 hover:underline">Documentation ↗</a> */}
                       <a href="https://github.com/Indrajit1996/Redux-sagas-using-typescript" 
-                        className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                        className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                           GitHub ↗
                       </a>
                     </div>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>React + Typescript + Redux-Saga framework for modular, maintainable architecture.</p>
-                  <div className="flex flex-wrap gap-2 mb-3">
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>React + Typescript + Redux-Saga framework for modular, maintainable architecture.</p>
+                  <div className="flex flex-wrap gap-2 mb-3 opacity-[0.8]">
                     <span className="text-xs text-gray-400">React</span>
                     <span className="text-xs text-gray-400">TypeScript</span>
                     <span className="text-xs text-gray-400">Redux-Saga</span>
                   </div>
-                  <p className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>⚡ 40% faster release velocity</p>
+                  <p className="text-xs font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>⚡ 40% faster release velocity</p>
                 </div>
 
               </div>
             </section>
 
             {/* Timeline Section */}
-            <section id="professional-journey" className="mb-8">
+            <section id="professional-journey" className="mb-8 opacity-[0.8]">
               <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Professional Journey</h2>
               <div className="timeline-holder relative">
                 <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: 0}}></div>
@@ -131,7 +131,7 @@ export default function MainContent() {
                         became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
-                        <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://console.contacto.com/</a>
+                        <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgba(70,107,85,255)'}}>https://console.contacto.com/</a>
                       </p>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default function MainContent() {
                         One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
-                        <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://web.jawwy.tv/ar/login</a>
+                        <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgba(70,107,85,255)'}}>https://web.jawwy.tv/ar/login</a>
                       </p>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function MainContent() {
                         Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
-                        <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'hsl(208, 59%, 60%)'}}>https://www.weinvest.net/</a>
+                        <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgba(70,107,85,255)'}}>https://www.weinvest.net/</a>
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function MainContent() {
             </section>
 
             {/* Blogs Section */}
-            <section id="blogs" className="mb-12">
+            <section id="blogs" className="mb-12 opacity-[0.8]">
               <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Blogs</h2>
               <div className="space-y-6">
                 <div className="rounded-lg hover:shadow-md cursor-pointer">
@@ -207,7 +207,7 @@ export default function MainContent() {
                     <a href="https://medium.com/@vindrajit1996/understand-web-fundamentals-2d0edb87e0cc" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                      className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -222,7 +222,7 @@ export default function MainContent() {
                     <a href="https://medium.com/@vindrajit1996/leptos-in-action-full-stack-web-dev-the-rusty-way-07536449a417" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                      className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -237,7 +237,7 @@ export default function MainContent() {
                     <a href="https://medium.com/@vindrajit1996/how-does-javascript-v8-engine-works-8756648e592f" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                      className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -252,7 +252,7 @@ export default function MainContent() {
                     <a href="https://medium.com/@vindrajit1996/react-hooks-b8145d83e416" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'hsl(208, 59%, 60%)'}}>
+                      className="text-xs font-semibold hover:underline" style={{color: 'rgba(70,107,85,255)'}}>
                         Read More ↗
                     </a>
                   </div>

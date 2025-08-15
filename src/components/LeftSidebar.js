@@ -2,11 +2,11 @@ import React from 'react'
 
 const LeftSidebar = () => {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-sm w-full lg:fixed lg:left-6 lg:top-6 lg:w-[calc((100vw-6rem-3rem)/12*3)] lg:h-[calc(100vh-3rem)] overflow-hidden" style={{backgroundColor: '#2d2d2d'}}>
+    <div className="bg-white rounded-lg p-6 shadow-sm w-full lg:fixed lg:left-6 lg:top-6 lg:w-[calc((100vw-6rem-3rem)/12*3)] lg:h-[calc(100vh-3rem)] overflow-auto" style={{backgroundColor: 'transparent', opacity: 0.8}}>
         <div className="space-y-6">
         {/* Contact Info */}
-        <div>
-            <img src="/portfolio.png" alt="Indrajit V - Frontend Engineer profile photo" className="w-1/2 h-auto" loading="lazy" />
+        <div className="relative mix-blend-color-dodge" style={{isolation: 'isolate'}}>
+            <img src="/blend-bg.png" alt="Indrajit V - Frontend Engineer profile photo" className="w-full h-auto relative z-[-1]" loading="lazy" />
         </div>
         <div>
             <div className="border-b border-gray-200 pb-4 mb-4">
