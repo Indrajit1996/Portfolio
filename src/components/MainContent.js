@@ -198,12 +198,12 @@ export default function MainContent() {
             </section>
 
             {/* Blogs Section */}
-            <section id="blogs" className="mb-12 opacity-[0.8]">
-              <h2 className="text-2xl font-semibold mb-6" style={{color: 'rgb(244, 241, 210)'}}>Blogs</h2>
+            <section id="blogs" className="mb-12">
+              <h2 className="text-2xl font-semibold mb-6 opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Blogs</h2>
               <div className="space-y-6">
-                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
                     <a href="https://medium.com/@vindrajit1996/understand-web-fundamentals-2d0edb87e0cc" 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -211,14 +211,14 @@ export default function MainContent() {
                         Read More ↗
                     </a>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     A comprehensive guide to understanding the core concepts of web development.
                   </p>
                 </div>
 
-                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
                     <a href="https://medium.com/@vindrajit1996/leptos-in-action-full-stack-web-dev-the-rusty-way-07536449a417" 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -226,14 +226,14 @@ export default function MainContent() {
                         Read More ↗
                     </a>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     Exploring full-stack web development using Leptos and the Rust ecosystem.
                   </p>
                 </div>
 
-                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
                     <a href="https://medium.com/@vindrajit1996/how-does-javascript-v8-engine-works-8756648e592f" 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -241,14 +241,14 @@ export default function MainContent() {
                         Read More ↗
                     </a>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     Deep dive into the inner workings of Chrome's V8 JavaScript engine.
                   </p>
                 </div>
 
-                <div className="rounded-lg hover:shadow-md cursor-pointer">
+                <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
+                    <h3 className="text-base font-semibold opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
                     <a href="https://medium.com/@vindrajit1996/react-hooks-b8145d83e416" 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -256,7 +256,7 @@ export default function MainContent() {
                         Read More ↗
                     </a>
                   </div>
-                  <p className="mb-3 font-semibold text-xs" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     Understanding React Hooks and how they revolutionize functional components.
                   </p>
                 </div>
