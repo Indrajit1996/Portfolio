@@ -1,19 +1,10 @@
-import { useEffect } from 'react';
-import LeftSidebar from './components/LeftSidebar';
-import MainContent from './components/MainContent';
-import RightSidebar from './components/RightSidebar';
-import CloudCanvas from './components/CloudCanvas';
+import { useEffect, useRef } from 'react';
 
-export default function App() {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+const CloudCanvas = ({ className = '', style = {} }) => {
+  const canvasRef = useRef(null);
 
   useEffect(() => {
-    const canvas = document.getElementById('cloud-bg');
+    const canvas = canvasRef.current;
     if (!canvas) return;
 
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -39,12 +30,12 @@ export default function App() {
         vec2 i = floor(p);
         vec2 f = fract(p);
         f = f * f * (3.0 - 2.0 * f);
-        
+
         float a = noise(i);
         float b = noise(i + vec2(1.0, 0.0));
         float c = noise(i + vec2(0.0, 1.0));
         float d = noise(i + vec2(1.0, 1.0));
-        
+
         return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
       }
 
@@ -52,7 +43,7 @@ export default function App() {
         float value = 0.0;
         float amplitude = 0.5;
         float frequency = 1.0;
-        
+
         for(int i = 0; i < 6; i++) {
           value += amplitude * smoothNoise(p * frequency);
           amplitude *= 0.5;
@@ -63,19 +54,18 @@ export default function App() {
 
       void main() {
         vec2 uv = gl_FragCoord.xy / u_resolution.xy;
-        
-        vec2 p = uv * 6.0;
-        p.x += u_time * 0.05;
-        p.y += u_time * 0.02;
-        
+
+        vec2 p = uv * 8.0;
+        p.x += u_time * 0.1;
+
         float clouds = fbm(p);
-        clouds = smoothstep(0.3, 0.7, clouds);
-        
+        clouds = smoothstep(0.4, 0.8, clouds);
+
         vec3 skyColor = vec3(0.18, 0.18, 0.18);
-        vec3 cloudColor = vec3(0.28, 0.28, 0.28);
-        
+        vec3 cloudColor = vec3(0.3, 0.4, 0.4);
+
         vec3 color = mix(skyColor, cloudColor, clouds);
-        
+
         gl_FragColor = vec4(color, 1.0);
       }
     `;
@@ -84,7 +74,6 @@ export default function App() {
       const shader = gl.createShader(type);
       gl.shaderSource(shader, source);
       gl.compileShader(shader);
-      
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
         console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
         gl.deleteShader(shader);
@@ -98,7 +87,6 @@ export default function App() {
       gl.attachShader(program, vertexShader);
       gl.attachShader(program, fragmentShader);
       gl.linkProgram(program);
-      
       if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
         console.error('Program linking error:', gl.getProgramInfoLog(program));
         gl.deleteProgram(program);
@@ -125,14 +113,18 @@ export default function App() {
     const resolutionUniformLocation = gl.getUniformLocation(program, 'u_resolution');
 
     function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      gl.viewport(0, 0, canvas.width, canvas.height);
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width;
+        canvas.height = height;
+        gl.viewport(0, 0, width, height);
+      }
     }
 
     function render(time) {
       resizeCanvas();
-      
+
       gl.clearColor(0.18, 0.18, 0.18, 1.0);
       gl.clear(gl.COLOR_BUFFER_BIT);
 
@@ -150,40 +142,10 @@ export default function App() {
       requestAnimationFrame(render);
     }
 
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
     requestAnimationFrame(render);
-
-    return () => {
-      window.removeEventListener('resize', resizeCanvas);
-    };
   }, []);
 
-  return (
-    <main className="h-screen bg-gray-50 p-6 overflow-y-auto" 
-      style={{ fontFamily: 'Diatype Variable, -apple-system, BlinkMacSystemFont, sans-serif',
-        backgroundColor: '#2d2d2d' }}
-      role="main">
+  return <canvas ref={canvasRef} className={className} style={style} />;
+};
 
-      <CloudCanvas className="fixed inset-0 w-full h-full z-0 pointer-events-none" />
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-full">
-        
-        {/* Contact Info & Profile - Semantic aside */}
-        <aside className="lg:col-span-3 lg:order-1 order-1" role="complementary" aria-label="Contact information and profile">
-          <LeftSidebar />
-        </aside>
-
-        {/* Navigation Menu - Semantic nav */}
-        <nav className="lg:col-span-3 lg:order-3 order-2" role="navigation" aria-label="Section navigation">
-          <RightSidebar scrollToSection={scrollToSection} />
-        </nav>
-
-        {/* Main Portfolio Content - Semantic section */}
-        <section className="lg:col-span-6 lg:order-2 order-3 z-[5]" aria-label="Portfolio content">
-          <MainContent />
-        </section>
-
-      </div>
-    </main>
-  );
-}
+export default CloudCanvas;
