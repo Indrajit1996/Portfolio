@@ -97,7 +97,14 @@ export default function MainContent() {
             <section id="professional-journey" className="mb-8">
               <h2 className="text-2xl font-semibold mb-6 opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>Professional Journey</h2>
               <div className="timeline-holder relative">
-                <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: 0}}></div>
+                <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: '8rem'}}></div>
+                <style jsx>{`
+                  @media (min-width: 640px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5.1rem !important;
+                    }
+                  }
+                `}</style>
                 
                 {/* ASU Decision Theater */}
                 <div className="relative flex items-start mb-8 opacity-[0.8]">
@@ -179,16 +186,16 @@ export default function MainContent() {
                 </div>
 
                 {/* EFI */}
-                <div className="relative flex items-start mb-8 opacity-[0.8]">
+                <div className="relative flex items-start mb-8">
                   <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0 opacity-[0.8]">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>EFI</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Jan 2018 - Jun 2018</span>
                     </div>
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Intern Software Developer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
-                      <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
+                      <p className="text-xs italic break-words opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                         I started my journey as a Software Engineer, working as a Java developer with the Spring framework. It was a big learning curve, and I'm grateful for the opportunity.
                       </p>
                     </div>
