@@ -1,7 +1,41 @@
 
+import React from 'react';
+
 export default function MainContent() {
+  const [showAudio, setShowAudio] = React.useState(false);
+  
   return (
     <div className="bg-white rounded-lg shadow-sm w-full" style={{backgroundColor: 'transparent' , zIndex: 5}}>
+      {showAudio && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{ zIndex: 1000 }}
+        >
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black bg-opacity-50"
+            onClick={() => setShowAudio(false)}
+          ></div>
+          
+          {/* Modal Content */}
+          <div className="relative bg-gray-800 rounded-lg p-6 max-w-md w-full mx-4">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-white text-lg font-semibold">Battalion CRM Audio</h3>
+              <button 
+                onClick={() => setShowAudio(false)}
+                className="text-white hover:text-gray-300 text-xl font-bold"
+              >
+                ✕
+              </button>
+            </div>
+            
+            <audio controls className="w-full" autoPlay>
+              <source src="/Project_battalion.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      )}
       <div className="h-full flex flex-col">
         {/* Hero Section */}
         <hr className="border-[rgb(244,241,210)] mt-6" />
@@ -31,9 +65,18 @@ export default function MainContent() {
                       </a>
                     </div>
                   </div>
-                  <p className="mb-3 font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
+                  <p className="font-semibold text-xs opacity-[0.8]" style={{color: 'rgb(244, 241, 210)'}}>
                     Real-time CRM platform built with Rust and Axum for scalable client onboarding and management.
                   </p>
+                  <span className="inline-block mb-3">
+                    <button 
+                      onClick={() => setShowAudio(!showAudio)}
+                      className="text-xs font-semibold cursor-pointer hover:underline" 
+                      style={{color: 'rgba(70,107,85,255)'}}
+                    >
+                      Click here to play audio ↗
+                    </button>
+                  </span>
                   <div className="flex flex-wrap gap-2 mb-3 opacity-[0.8]">
                     <span className="text-xs text-gray-400" >Rust</span>
                     <span className="text-xs text-gray-400" >Axum</span>
