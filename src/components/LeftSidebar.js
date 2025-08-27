@@ -3,12 +3,12 @@ import CloudCanvas from './CloudCanvas'
 
 const LeftSidebar = () => {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-sm w-full lg:fixed lg:left-6 lg:top-6 lg:w-[calc((100vw-6rem-3rem)/12*3)] lg:h-[calc(100vh-3rem)] overflow-auto" style={{backgroundColor: 'transparent', opacity: 0.8}}>
+    <div className="bg-white rounded-lg p-6 shadow-sm w-full lg:fixed lg:left-6 lg:top-6 lg:w-[calc((100vw-6rem-3rem)/12*3)] lg:h-[calc(100vh-3rem)] overflow-auto" style={{backgroundColor: 'transparent', opacity: 0.9}}>
         <div className="space-y-6">
         {/* Contact Info */}
         <div className="relative" style={{isolation: 'isolate'}}>
             <img src="/blend-bg.png" alt="Indrajit V - Frontend Engineer profile photo" className="w-full h-auto" loading="lazy" />
-            <CloudCanvas className="absolute inset-0 w-full h-full pointer-events-none mix-blend-color-dodge" />
+            <CloudCanvas className="absolute inset-0 w-full h-full pointer-events-none mix-blend-color-dodge" amplitude={0.9} />
         </div>
         <div>
             <div className="border-b border-gray-200 pb-4 mb-4">

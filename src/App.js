@@ -165,7 +165,7 @@ export default function App() {
         backgroundColor: '#2d2d2d' }}
       role="main">
 
-      <CloudCanvas className="fixed inset-0 w-full h-full z-0 pointer-events-none" />
+      <CloudCanvas className="fixed inset-0 w-full h-full z-0 pointer-events-none" amplitude={0.5} />
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-full">
         
         {/* Contact Info & Profile - Semantic aside */}
