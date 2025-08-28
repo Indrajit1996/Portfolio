@@ -56,8 +56,8 @@ export default function MainContent() {
                 {/* Project 1: Battalion CRM */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
-                    <div className="flex space-x-3">
+                    <h3 className="text-base font-semibold sm:w-auto w-[50%]" style={{color: 'rgb(244, 241, 210)'}}>Battalion CRM</h3>
+                    <div className="flex space-x-3 sm:w-auto w-[50%] justify-end">
                       <span className="text-xs font-semibold cursor-pointer hover:underline" style={{color: 'rgb(255, 140, 60)'}} onClick={() => { window.open('https://battalion.fly.dev/', '_blank') }}>Live Demo ↗</span>
                       <a href="https://github.com/matthewharwood/Battalion" 
                         className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
@@ -90,8 +90,8 @@ export default function MainContent() {
                 {/* Project 2: Auto-Caller App */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>Auto-Caller App</h3>
-                    <div className="flex space-x-3">
+                    <h3 className="text-base font-semibold sm:w-auto w-[50%]" style={{color: 'rgb(244, 241, 210)'}}>Auto-Caller App</h3>
+                    <div className="flex space-x-3 sm:w-auto w-[50%] justify-end">
                       <span className="text-xs font-semibold cursor-not-allowed" style={{color: 'rgb(244, 241, 210)', opacity: 0.6}}>Live Demo ↗</span>
                       <a href="https://github.com/Indrajit1996/Auto-Caller" 
                         className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
@@ -116,8 +116,8 @@ export default function MainContent() {
                 {/* Project 3: Scalable Frontend Architecture */}
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>Scalable Frontend Architecture</h3>
-                    <div className="flex space-x-3">
+                    <h3 className="text-base font-semibold sm:w-auto w-[70%]" style={{color: 'rgb(244, 241, 210)'}}>Scalable Frontend Architecture</h3>
+                    <div className="flex space-x-3 sm:w-auto w-[30%] justify-end">
                       {/* <a href="#" className="text-sm text-blue-600 hover:underline">Documentation ↗</a> */}
                       <a href="https://github.com/Indrajit1996/Redux-sagas-using-typescript" 
                         className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
@@ -141,11 +141,51 @@ export default function MainContent() {
             <section id="professional-journey" className="mb-8">
               <h2 className="text-2xl font-semibold mb-6 " style={{color: 'rgb(244, 241, 210)'}}>Professional Journey</h2>
               <div className="timeline-holder relative">
-                <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: '8rem'}}></div>
+                <div className="absolute left-2 sm:left-4 w-px bg-gray-300" style={{top: '1rem', bottom: '6.9rem'}}></div>
                 <style jsx>{`
-                  @media (min-width: 640px) {
+                  @media (max-width: 375px) {
                     .timeline-holder > div:first-child {
-                      bottom: 5.1rem !important;
+                      bottom: 8rem !important;
+                    }
+                  }
+                  @media (min-width: 540px) and (max-width: 639px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5.8rem !important;
+                    }
+                  }
+                  @media (min-width: 640px) and (max-width: 820px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5rem !important;
+                    }
+                  }
+                  @media (min-width: 821px) and (max-width: 852px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 6.2rem !important;
+                    }
+                  }
+                  @media (min-width: 853px) and (max-width: 911px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 4.9rem !important;
+                    }
+                  }
+                  @media (min-width: 912px) and (max-width: 1023px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5rem !important;
+                    }
+                  }
+                  @media (min-width: 1024px) and (max-width: 1024px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5.8rem !important;
+                    }
+                  }
+                  @media (min-width: 1025px) and (max-width: 1366px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5rem !important;
+                    }
+                  }
+                  @media (min-width: 1367px) {
+                    .timeline-holder > div:first-child {
+                      bottom: 5.5rem !important;
                     }
                   }
                 `}</style>
@@ -254,11 +294,11 @@ export default function MainContent() {
               <div className="space-y-6">
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
+                    <h3 className="text-base font-semibold sm:w-auto w-[70%]" style={{color: 'rgb(244, 241, 210)'}}>Understand Web Fundamentals</h3>
                     <a href="https://medium.com/@vindrajit1996/understand-web-fundamentals-2d0edb87e0cc" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
+                      className="text-xs font-semibold hover:underline sm:w-auto w-[30%] sm:text-left text-right" style={{color: 'rgb(255, 140, 60)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -269,11 +309,11 @@ export default function MainContent() {
 
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
+                    <h3 className="text-base font-semibold sm:w-auto w-[70%]" style={{color: 'rgb(244, 241, 210)'}}>Leptos in Action: Full-stack Web Dev the Rusty Way</h3>
                     <a href="https://medium.com/@vindrajit1996/leptos-in-action-full-stack-web-dev-the-rusty-way-07536449a417" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
+                      className="text-xs font-semibold hover:underline sm:w-auto w-[30%] sm:text-left text-right" style={{color: 'rgb(255, 140, 60)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -284,11 +324,11 @@ export default function MainContent() {
 
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
+                    <h3 className="text-base font-semibold sm:w-auto w-[70%]" style={{color: 'rgb(244, 241, 210)'}}>How Does JavaScript V8 Engine Works</h3>
                     <a href="https://medium.com/@vindrajit1996/how-does-javascript-v8-engine-works-8756648e592f" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
+                      className="text-xs font-semibold hover:underline sm:w-auto w-[30%] sm:text-left text-right" style={{color: 'rgb(255, 140, 60)'}}>
                         Read More ↗
                     </a>
                   </div>
@@ -299,11 +339,11 @@ export default function MainContent() {
 
                 <div className="rounded-lg cursor-pointer">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base font-semibold " style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
+                    <h3 className="text-base font-semibold sm:w-auto w-[70%]" style={{color: 'rgb(244, 241, 210)'}}>React Hooks</h3>
                     <a href="https://medium.com/@vindrajit1996/react-hooks-b8145d83e416" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline" style={{color: 'rgb(255, 140, 60)'}}>
+                      className="text-xs font-semibold hover:underline sm:w-auto w-[30%] sm:text-left text-right" style={{color: 'rgb(255, 140, 60)'}}>
                         Read More ↗
                     </a>
                   </div>

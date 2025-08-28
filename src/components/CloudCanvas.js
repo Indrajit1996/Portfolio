@@ -46,7 +46,7 @@ const CloudCanvas = ({ className = '', style = {} }) => {
 
         for(int i = 0; i < 6; i++) {
           value += amplitude * smoothNoise(p * frequency);
-          amplitude *= 0.5;
+          amplitude *= 0.35;
           frequency *= 2.0;
         }
         return value;
@@ -56,7 +56,6 @@ const CloudCanvas = ({ className = '', style = {} }) => {
         vec2 uv = gl_FragCoord.xy / u_resolution.xy;
 
         vec2 p = uv * 8.0;
-        p.x += u_time * 0.1;
 
         float clouds = fbm(p);
         clouds = smoothstep(0.4, 0.8, clouds);

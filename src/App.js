@@ -160,7 +160,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="h-screen bg-gray-50 p-6 overflow-y-auto" 
+    <main className="min-h-screen bg-gray-50 p-6 overflow-y-auto" 
       style={{ fontFamily: 'Diatype Variable, -apple-system, BlinkMacSystemFont, sans-serif',
         backgroundColor: '#2d2d2d' }}
       role="main">
