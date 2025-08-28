@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
+const CloudCanvas = ({ className = '', style = {} }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +17,6 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
       }
     `;
 
-    // 🎨 Updated fragment shader using your header/body/link colors
     const fragmentShaderSource = `
       precision mediump float;
       uniform float u_time;
@@ -42,12 +41,12 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
 
       float fbm(vec2 p) {
         float value = 0.0;
-        float amplitude = ${amplitude};
+        float amplitude = 0.5;
         float frequency = 1.0;
 
-        for (int i = 0; i < 6; i++) {
+        for(int i = 0; i < 6; i++) {
           value += amplitude * smoothNoise(p * frequency);
-          amplitude *= 0.55;
+          amplitude *= 0.5;
           frequency *= 2.0;
         }
         return value;
@@ -55,35 +54,19 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
 
       void main() {
         vec2 uv = gl_FragCoord.xy / u_resolution.xy;
-        uv -= 0.5;
-        uv.x *= u_resolution.x / u_resolution.y;
 
-        // Flow distortion
-        uv += 0.02 * vec2(sin(u_time * 0.7), cos(u_time * 0.15));
+        vec2 p = uv * 8.0;
+        p.x += u_time * 0.1;
 
-        // Noise-based cloud shape
-        vec2 p = uv * 3.5;
-        float clouds = fbm(p + vec2(u_time * 0.05, 0.0));
+        float clouds = fbm(p);
+        clouds = smoothstep(0.4, 0.8, clouds);
 
-        // 🎨 Dark bluish color palette
-        vec3 skyColor = vec3(0.02, 0.05, 0.12); // deep dark blue
-        vec3 horizonColor = vec3(0.08, 0.15, 0.25); // darker blue
-        vec3 cloudLight = vec3(0.3, 0.4, 0.6); // light blue-grey
-        vec3 accentGlow = vec3(0.1, 0.3, 0.8); // bright blue accent
+        vec3 skyColor = vec3(0.18, 0.18, 0.18);
+        vec3 cloudColor = vec3(0.3, 0.4, 0.4);
 
-        // Gradient sky
-        vec3 baseSky = mix(skyColor, horizonColor, uv.y + 0.5);
-        vec3 cloudCol = mix(baseSky, cloudLight, smoothstep(0.4, 0.8, clouds));
+        vec3 color = mix(skyColor, cloudColor, clouds);
 
-        // Add subtle orange glow
-        cloudCol += 0.1 * accentGlow * sin(u_time * 0.1 + uv.y * 3.0);
-
-        // Vignette effect
-        float dist = length(uv);
-        float vignette = smoothstep(0.9, 0.4, dist);
-        cloudCol *= vignette;
-
-        gl_FragColor = vec4(cloudCol, 1.0);
+        gl_FragColor = vec4(color, 1.0);
       }
     `;
 
@@ -92,7 +75,7 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
       gl.shaderSource(shader, source);
       gl.compileShader(shader);
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        console.error('Shader compile error:', gl.getShaderInfoLog(shader));
+        console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
         gl.deleteShader(shader);
         return null;
       }
@@ -105,7 +88,7 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
       gl.attachShader(program, fragmentShader);
       gl.linkProgram(program);
       if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-        console.error('Program link error:', gl.getProgramInfoLog(program));
+        console.error('Program linking error:', gl.getProgramInfoLog(program));
         gl.deleteProgram(program);
         return null;
       }
@@ -118,11 +101,12 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
 
     const positionBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.bufferData(
-      gl.ARRAY_BUFFER,
-      new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]),
-      gl.STATIC_DRAW
-    );
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+      -1, -1,
+       1, -1,
+      -1,  1,
+       1,  1,
+    ]), gl.STATIC_DRAW);
 
     const positionAttributeLocation = gl.getAttribLocation(program, 'a_position');
     const timeUniformLocation = gl.getUniformLocation(program, 'u_time');
@@ -140,7 +124,8 @@ const CloudCanvas = ({ className = '', style = {}, amplitude }) => {
 
     function render(time) {
       resizeCanvas();
-      gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
+      gl.clearColor(0.18, 0.18, 0.18, 1.0);
       gl.clear(gl.COLOR_BUFFER_BIT);
 
       gl.useProgram(program);
