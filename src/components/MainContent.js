@@ -271,7 +271,7 @@ export default function MainContent() {
 
                 {/* EFI */}
                 <div className="relative flex items-start mb-8">
-                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow" style={{top: '0.5rem'}}></div>
+                  <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow top-2 md:top-0"></div>
                   <div className="ml-6 sm:ml-10 flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0 ">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>EFI</h3>
