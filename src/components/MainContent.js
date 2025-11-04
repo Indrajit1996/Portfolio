@@ -40,7 +40,7 @@ export default function MainContent() {
         {/* Hero Section */}
         <hr className="border-[rgb(244,241,210)] mt-6" />
         <header className="p-6 pl-0 pr-0 ">
-          <h1 className="text-4xl font-semibold mb-6 text-left" style={{color: '#ff6a3b'}}>Frontend Engineer</h1>
+          <h1 className="text-4xl font-semibold mb-6 text-left" style={{color: '#ff6a3b'}}>Software Engineer</h1>
           <p className="mb-3 text-left font-[600] text-2xl" style={{color: 'rgba(236,234,204,255)'}}>
             Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
             Passionate about end-to-end ownership from concept to deployment.
@@ -272,7 +272,7 @@ export default function MainContent() {
                 {/* EFI */}
                 <div className="relative flex items-start mb-8">
                   <div className="absolute left-0.5 sm:left-2.5 w-3 h-3 bg-[rgb(244,241,210)] rounded-full border border-[rgb(244,241,210)] shadow top-2 md:top-0"></div>
-                  <div className="ml-6 sm:ml-10 flex-1 min-w-0">
+                  <div className="ml-6 sm:ml-10 flex-1 min-w-0" style={{position: 'relative', bottom: '0.5rem'}}>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0 ">
                       <h3 className="text-base font-semibold" style={{color: 'rgb(244, 241, 210)'}}>EFI</h3>
                       <span className="text-xs font-semibold" style={{color: 'rgb(244, 241, 210)'}}>Jan 2018 - Jun 2018</span>
