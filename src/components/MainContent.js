@@ -42,9 +42,40 @@ export default function MainContent() {
         <header className="p-6 pl-0 pr-0 ">
           <h1 className="text-4xl font-semibold mb-6 text-left" style={{color: '#ff6a3b'}}>Software Engineer</h1>
           <p className="mb-3 text-left font-[600] text-2xl" style={{color: 'rgba(236,234,204,255)'}}>
-            Experienced software engineer with 6+ years building scalable, user-centric interfaces. 
+            Experienced software engineer with 6+ years building scalable, user-centric interfaces.
             Passionate about end-to-end ownership from concept to deployment.
           </p>
+
+          {/* Resume Download Button */}
+          <div className="mt-6 mb-2">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1gRktywxA3D5iX-8gZIRSAG5-mN0kbLNb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+              style={{
+                background: 'linear-gradient(135deg, rgb(255, 140, 60) 0%, rgb(255, 106, 59) 100%)',
+                color: 'rgb(244, 241, 210)',
+                boxShadow: '0 4px 15px rgba(255, 106, 59, 0.3)'
+              }}
+            >
+              <svg
+                className="w-5 h-5 transition-transform group-hover:translate-y-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              <span>Download Resume</span>
+              <span className="text-xs opacity-90">• PDF</span>
+            </a>
+          </div>
         </header>
         
         <div className="flex-1 p-6 pl-0 pr-0">
