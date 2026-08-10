@@ -30,7 +30,7 @@ export default function MainContent() {
             </div>
             
             <audio controls className="w-full" autoPlay>
-              <source src="/Project_battalion.wav" type="audio/wav" />
+              <source src="/Project_battalion.wav" type="audio/wav" /> 
               Your browser does not support the audio element.
             </audio>
           </div>
