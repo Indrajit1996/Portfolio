@@ -7,7 +7,7 @@ const LeftSidebar = () => {
         <div className="space-y-6">
         {/* Contact Info */}
         <div className="relative" style={{isolation: 'isolate'}}>
-            <img src="/blend-bg.png" alt="Indrajit V - Frontend Engineer profile photo" className="w-full h-auto" loading="lazy" />
+            <img src="/blend-bg.png" alt="Indrajit V - Frontend Engineer profile" className="w-full h-auto" loading="lazy" />
             <CloudCanvas className="absolute inset-0 w-full h-full pointer-events-none mix-blend-color-dodge" amplitude={0.6} />
         </div>
         <div>

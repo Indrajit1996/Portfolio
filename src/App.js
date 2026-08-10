@@ -169,7 +169,7 @@ export default function App() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-full">
         
         {/* Contact Info & Profile - Semantic aside */}
-        <aside className="lg:col-span-3 lg:order-1 order-1" role="complementary" aria-label="Contact information and profile">
+        <aside className="lg:col-span-3 lg:order-1 order-1" aria-label="Contact information and profile">
           <LeftSidebar />
         </aside>
 

@@ -70,36 +70,33 @@ export default function RightSidebar({ scrollToSection }) {
           <div className="w-full text-xs font-semibold text-[rgb(244,241,210)] outline-none">
             <hr className="border-[rgb(244,241,210)] mb-2" />
             <span className="block mb-2">
-              <a 
-                href="#" 
-                rel="home-page" 
-                onClick={(e) => { e.preventDefault(); scrollToSection('featured-projects'); }}
-                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              <button
+                type="button"
+                onClick={() => scrollToSection('featured-projects')}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer bg-transparent border-none p-0 font-inherit text-inherit text-left hover:opacity-80"
               >
                 ❶ &nbsp;Featured Projects
-              </a>
+              </button>
             </span>
             <hr className="border-[rgb(244,241,210)] my-2" />
             <span className="block mb-2">
-              <a 
-                href="#" 
-                rel="home-page" 
-                onClick={(e) => { e.preventDefault(); scrollToSection('professional-journey'); }}
-                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              <button
+                type="button"
+                onClick={() => scrollToSection('professional-journey')}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer bg-transparent border-none p-0 font-inherit text-inherit text-left hover:opacity-80"
               >
                 ❷ &nbsp;Professional Journey
-              </a>
+              </button>
             </span>
             <hr className="border-[rgb(244,241,210)] my-2" />
             <span className="block mb-2">
-              <a 
-                href="#" 
-                rel="home-page" 
-                onClick={(e) => { e.preventDefault(); scrollToSection('blogs'); }}
-                className="text-[rgb(244,241,210)] no-underline cursor-pointer"
+              <button
+                type="button"
+                onClick={() => scrollToSection('blogs')}
+                className="text-[rgb(244,241,210)] no-underline cursor-pointer bg-transparent border-none p-0 font-inherit text-inherit text-left hover:opacity-80"
               >
                 ❸ &nbsp;Blogs
-              </a>
+              </button>
             </span>
             <hr className="border-[rgb(244,241,210)] my-2" />
           </div>
