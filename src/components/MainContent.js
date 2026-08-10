@@ -231,8 +231,8 @@ export default function MainContent() {
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs italic break-words" style={{color: 'rgb(244, 241, 210)'}}>
-                        Marking a significant career milestone. 
-                        Meeting exceptional people, exchanging insights, and embracing big-picture perspectives.
+                        Decision Theater builds immersive visualization environments for data-driven policy and research.
+                        I architected interactive web applications to translate complex datasets into actionable insights for stakeholders.
                       </p>
                     </div>
                   </div>
@@ -249,7 +249,8 @@ export default function MainContent() {
                     <p className="text-xs font-semibold mb-3 " style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs italic break-words " style={{color: 'rgb(244, 241, 210)'}}>
-                        became part of Contacto's product engineering team, working with a robust tech stack that included Electron, React, Vue, Redux, SCSS, and other tools.
+                        Plivo delivers cloud communication APIs for voice, SMS, and video.
+                        I engineered the Contacto desktop app (Electron + React) and rebuilt the web console, driving feature velocity and user engagement.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://console.contacto.com/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgb(255, 140, 60)'}}>https://console.contacto.com/</a>
@@ -269,8 +270,8 @@ export default function MainContent() {
                     <p className="text-xs font-semibold mb-3 " style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs italic break-words " style={{color: 'rgb(244, 241, 210)' }}>
-                        Serving as a Frontend Developer at Recro gave me the freedom to develop high-performing pages for TV and OTT apps.
-                        One of the most challenging aspects of my career. Built an entire Netflix like app from scratch with a talented team of 5 members.
+                        Recro powers streaming platforms for telecom and media companies.
+                        I built Jawwy TV's web application from scratch—a Netflix-style OTT platform with high-performance video streaming, adaptive UI, and multi-language support.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://web.jawwy.tv/ar/login" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgb(255, 140, 60)'}}>https://web.jawwy.tv/ar/login</a>
@@ -290,7 +291,8 @@ export default function MainContent() {
                     <p className="text-xs font-semibold mb-3 " style={{color: 'rgb(244, 241, 210)'}}>Software Engineer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs italic break-words " style={{color: 'rgb(244, 241, 210)'}}>
-                        Fate smiled as I transitioned to the web development team, taking charge of crafting Single Page Applications using React , Vuejs and Ruby On Rails.
+                        Weinvest provides investment portfolio management and analytics tools.
+                        I developed responsive SPAs using React, Vue, and Rails, implementing real-time data dashboards and seamless user workflows.
                       </p>
                       <p className="mt-2 text-xs" style={{color: 'rgb(244, 241, 210)'}}>
                         <a href="https://www.weinvest.net/" target="_blank" rel="noopener noreferrer" className="underline break-all" style={{color: 'rgb(255, 140, 60)'}}>https://www.weinvest.net/</a>
@@ -310,7 +312,8 @@ export default function MainContent() {
                     <p className="text-xs font-semibold mb-3" style={{color: 'rgb(244, 241, 210)'}}>Intern Software Developer</p>
                     <div className="bg-gray-50" style={{background: 'transparent'}}>
                       <p className="text-xs italic break-words " style={{color: 'rgb(244, 241, 210)'}}>
-                        I started my journey as a Software Engineer, working as a Java developer with the Spring framework. It was a big learning curve, and I'm grateful for the opportunity.
+                        EFI develops enterprise printing and imaging solutions for commercial and industrial markets.
+                        I contributed to backend services using Java and Spring Framework, gaining foundational experience in enterprise software development.
                       </p>
                     </div>
                   </div>
