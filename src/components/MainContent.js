@@ -42,8 +42,7 @@ export default function MainContent() {
         <header className="p-6 pl-0 pr-0 ">
           <h1 className="text-4xl font-semibold mb-6 text-left" style={{color: '#ff6a3b'}}>Software Engineer</h1>
           <p className="mb-3 text-left font-[600] text-2xl" style={{color: 'rgba(236,234,204,255)'}}>
-            Experienced software engineer with 6+ years building scalable, user-centric interfaces.
-            Passionate about end-to-end ownership from concept to deployment.
+            Software Engineer with 6+ years of experience architecting scalable user interfaces and high-throughput distributed systems.
           </p>
 
           {/* Resume Download Button */}
