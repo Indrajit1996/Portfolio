@@ -46,7 +46,7 @@ export default function MainContent() {
           </p>
 
           {/* Resume Download Button */}
-          <div className="mt-6 mb-2">
+          {/* <div className="mt-6 mb-2">
             <a
               href="https://drive.google.com/uc?export=download&id=1gRktywxA3D5iX-8gZIRSAG5-mN0kbLNb"
               target="_blank"
@@ -74,7 +74,7 @@ export default function MainContent() {
               <span>Download Resume</span>
               <span className="text-xs opacity-90">• PDF</span>
             </a>
-          </div>
+          </div> */}
         </header>
         
         <div className="flex-1 p-6 pl-0 pr-0">

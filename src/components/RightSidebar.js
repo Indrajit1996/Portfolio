@@ -46,7 +46,7 @@ export default function RightSidebar({ scrollToSection }) {
                 <div className="text-lg md:text-2xl font-semibold pb-3 md:pb-4">
                   {selectedImage?.content?.header}
                 </div>
-                <div className="font-semibold text-xs md:text-xs leading-relaxed md:leading-loose max-w-full md:max-w-96 overflow-y-auto max-h-40 md:max-h-none">
+                <div className="font-semibold text-xs md:text-xs leading-relaxed md:leading-loose max-w-full md:max-w-96 overflow-y-auto max-h-40 md:max-h-none whitespace-pre-line">
                   {selectedImage?.content?.content}
                 </div>
               </div>
